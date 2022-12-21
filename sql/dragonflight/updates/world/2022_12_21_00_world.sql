@@ -16,11 +16,11 @@ INSERT INTO `race_unlock_requirement` (`raceID`, `expansion`, `achievementId`) V
 
 -- Alliance
 
-INSERT INTO `playercreateinfo`(`race`, `class`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `npe_map`, `npe_position_x`, `npe_position_y`, `npe_position_z`, `npe_orientation`, `npe_transport_guid`, `intro_movie_id`, `intro_scene_id`, `npe_intro_scene_id`) VALUES (52, 13, 0, -8914.57, -133.909, 80.5378, 5.10444, 2175, 11.1301, -0.417182, 5.18741, 3.14843, 29, NULL, NULL, 2236)
+INSERT INTO `playercreateinfo`(`race`, `class`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `npe_map`, `npe_position_x`, `npe_position_y`, `npe_position_z`, `npe_orientation`, `npe_transport_guid`, `intro_movie_id`, `intro_scene_id`, `npe_intro_scene_id`) VALUES (52, 13, 0, -8914.57, -133.909, 80.5378, 5.10444, 2175, 11.1301, -0.417182, 5.18741, 3.14843, 29, NULL, NULL, 2236);
 
 -- Horde
 
-INSERT INTO `playercreateinfo`(`race`, `class`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `npe_map`, `npe_position_x`, `npe_position_y`, `npe_position_z`, `npe_orientation`, `npe_transport_guid`, `intro_movie_id`, `intro_scene_id`, `npe_intro_scene_id`) VALUES (70, 13, 1, -618.518, -4251.67, 38.718, 0, 2175, -10.7291, -7.14635, 8.73113, 1.56321, 30, NULL, NULL, 2486)
+INSERT INTO `playercreateinfo`(`race`, `class`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `npe_map`, `npe_position_x`, `npe_position_y`, `npe_position_z`, `npe_orientation`, `npe_transport_guid`, `intro_movie_id`, `intro_scene_id`, `npe_intro_scene_id`) VALUES (70, 13, 1, -618.518, -4251.67, 38.718, 0, 2175, -10.7291, -7.14635, 8.73113, 1.56321, 30, NULL, NULL, 2486);
 
 -- race_unlock_requirement
 
@@ -40,11 +40,11 @@ UPDATE `race_unlock_requirement` SET `achievementId` = 0 WHERE `raceID` = 37;
 
 -- Alliance
 
-INSERT INTO `player_racestats`(`race`, `str`, `agi`, `sta`, `inte`) VALUES (52, 0, 0, 0, 0)
+INSERT INTO `player_racestats`(`race`, `str`, `agi`, `sta`, `inte`) VALUES (52, 0, 0, 0, 0);
 
 -- Horde
 
-INSERT INTO `player_racestats`(`race`, `str`, `agi`, `sta`, `inte`) VALUES (70, 3, -3, 1, -1)
+INSERT INTO `player_racestats`(`race`, `str`, `agi`, `sta`, `inte`) VALUES (70, 3, -3, 1, -1);
 
 -- player_classlevelstats
 
