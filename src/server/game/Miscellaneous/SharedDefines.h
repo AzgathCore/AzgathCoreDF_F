@@ -7828,6 +7828,19 @@ enum class MountResult : uint32
     Ok             = 10 // never sent
 };
 
+enum Maps : uint32
+{
+    MAP_ZULDAZAR = 1642,
+    MAP_KUL_TIRAS = 1643,
+    MAP_ULDIR = 1861,
+    MAP_CRUCIBLE_OF_STORMS = 2096,
+    MAP_BATTLE_OF_DAZARALOR = 2070,
+    MAP_ETERNAL_PALACE = 2164,
+    MAP_NYALOTHA = 2217,
+    MAP_NPE = 2175,
+    MAP_CASTLE_NATHRIA = 2296,
+};
+
 enum AreaId : uint32
 {
     AREA_WINTERGRASP                = 4197,

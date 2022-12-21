@@ -55,7 +55,7 @@ public:
 		{
 			if (player->GetRace() == RACE_PANDAREN_HORDE || RACE_PANDAREN_ALLIANCE && player->GetMapId() == MAP_ALLIED_DK_ICECROWN && player->GetClass() == CLASS_DEATH_KNIGHT)
             {
-                //player->GetSceneMgr().PlaySceneByPackageId(2780);
+                /*player->GetSceneMgr().PlaySceneByPackageId(2780);*/
             }
 
             if ((player->GetClass() == CLASS_DEATH_KNIGHT) && (player->IsAlliedRace()))
@@ -136,8 +136,6 @@ public:
             {
                 Player* player = NULL;
                 if (me->IsSummon())
-                    //if (Unit* summoner = me->ToTempSummon()->GetSummoner())
-                       // player = summoner->ToPlayer();
 
                 if (!player)
                     phase = 3;
@@ -160,7 +158,7 @@ public:
                         FlyBackTimer = 1;
                         break;
                     case 2:
-                        DoCast(player, 51918, true); // this is only for visual effect!
+                        DoCast(player, 51918, true);
                         me->HandleEmoteCommand(EMOTE_ONESHOT_CUSTOM_SPELL_01);
                         Talk(0, player);
                         player->TeleportTo(2297, 498.144653f, -2124.429932f, 840.856934f, 3.065104f);
@@ -187,16 +185,15 @@ public:
 class zone_allied_dk : public ZoneScript
 {
 public:
-    //zone_allied_dk() : ZoneScript("zone_allied_dk") { }
+    /*zone_allied_dk() : ZoneScript("zone_allied_dk") { }*/
 
     void OnPlayerDeath(Player* player)
     {
-        //if (player->GetMapId() == MAP_ALLIED_DK_ICECROWN)
-            //player->SummonCreature(228534, player->GetPosition(), TEMPSUMMON_MANUAL_DESPAWN, 0U, 0U);
+        if (player->GetMapId() == MAP_ALLIED_DK_ICECROWN)
+              (228534, player->GetPosition(), TEMPSUMMON_MANUAL_DESPAWN, 0U, 0U);
     }
 
 };
-
 
 void AddSC_AlliedRaces()
 {

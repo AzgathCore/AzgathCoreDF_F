@@ -430,7 +430,7 @@ void MotionMaster::Remove(MovementGeneratorType type, MovementSlot slot/* = MOTI
     }
 }
 
-void MotionMaster::Clear(bool reset /*= true*/)
+void MotionMaster::Clear(bool /*reset*/ /*= true*/)
 {
     if (HasFlag(MOTIONMASTER_FLAG_DELAYED))
     {
